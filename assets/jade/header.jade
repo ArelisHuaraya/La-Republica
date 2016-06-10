@@ -5,11 +5,11 @@ html(lang='es-PE')
     title Home
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/main.css')
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
     script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
     script(type='text/javascript', src='js/bootstrap.min.js')
@@ -20,7 +20,69 @@ html(lang='es-PE')
   body
     #header-section
         .container.top
+            img(src="../image/banner_top.jpg")
             .row
-                .container
-                    img(src="image/banner_top.jpg")
+                .col-md-4
+                    ul.list-menu.list-unstyled.list-inline
+                        li
+                            a.small(href="") LIBERO.PE
+                        li
+                            a.small(href="") EL POPULAR.PE
+                        li
+                            a.small(href="") FUNDACIÓN GUSTAVO MOHME LLONA
+                .col-md-8
+                    .row
+                        .col-md-4
+                            button.btn.btn-default SUSCRÍBETE AL BOLETIN
+
+                        .col-md-4
+                            span
+                                i.fa.fa-facebook
+                                i.fa.fa-twitter
+                                i.fa.fa-gmail
+                                i.fa.fa-envelope-o
+                                i.fa.fa-wifi
+                        .col-md-4
+                            input.buscador.srilo_lt(type="text" id="buscar" placeholder="search")
+                            i.fa.fa-search
+    #header-menu
+        .container.menu
+            .row
+                .col-md-4
+                    img(src="../image/logo-la-republica.jpg")
+                .col-md-4
+                    p HABLA LA LIDERESA DEL NACIONALISMO
+                .col-md-2
+                    p La corrupción, los orígenes
+                    p por: Gustavo Mohme LLona
+                .col-md-2
+                    img(src="../image/img_author.jpg")
+            .row
+                ul.list-menu.list-unstyle.list-inline
+                    li       
+                        a(href="") POLÍTICA
+                    li       
+                        a(href="") ECONOMÍA
+                    li       
+                        a(href="") SOCIEDAD
+                    li       
+                        a(href="") ELECC. REGIONALES
+                    li       
+                        a(href="") DEPORTES
+                    li       
+                        a(href="") CHAMPIONS L.
+                    li       
+                        a(href="") ESPECTÁCULOS
+                    li       
+                        a(href="") ED. IMPRESA
+                    li       
+                        a(href="") REGIONALES
+                    li       
+                        a(href="") MÁS SECCIONES
+
+
+
+
+
+                                
             

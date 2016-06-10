@@ -9,7 +9,7 @@ html(lang='es-PE')
     link(rel='stylesheet', type='text/css', href='../css/dist/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
     link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/main.css')
+    link(rel='stylesheet', type='text/css', href='../css/main.css')
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
     script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
     script(type='text/javascript', src='js/bootstrap.min.js')
@@ -22,7 +22,7 @@ html(lang='es-PE')
         .container.top
             img(src="../image/banner_top.jpg")
             .row
-                .col-md-4
+                .col-md-5
                     ul.list-menu.list-unstyled.list-inline
                         li
                             a.small(href="") LIBERO.PE
@@ -30,20 +30,20 @@ html(lang='es-PE')
                             a.small(href="") EL POPULAR.PE
                         li
                             a.small(href="") FUNDACIÓN GUSTAVO MOHME LLONA
-                .col-md-8
+                .col-md-7
                     .row
                         .col-md-4
-                            button.btn.btn-default SUSCRÍBETE AL BOLETIN
+                            button.btn.btn-default.pull-right SUSCRÍBETE AL BOLETIN
 
                         .col-md-4
                             span
                                 i.fa.fa-facebook
                                 i.fa.fa-twitter
-                                i.fa.fa-gmail
+                                i.fa.fa-google-plus
                                 i.fa.fa-envelope-o
-                                i.fa.fa-wifi
+                                i.fa.fa-rss
                         .col-md-4
-                            input.buscador.srilo_lt(type="text" id="buscar" placeholder="search")
+                            input.buscador.srilo_lt(type="text" id="buscar" placeholder="BUSCAR")
                             i.fa.fa-search
     #header-menu
         .container.menu
@@ -52,10 +52,10 @@ html(lang='es-PE')
                     img(src="../image/logo-la-republica.jpg")
                 .col-md-4
                     p HABLA LA LIDERESA DEL NACIONALISMO
-                .col-md-2
+                .col-md-3
                     p La corrupción, los orígenes
                     p por: Gustavo Mohme LLona
-                .col-md-2
+                .col-md-1
                     img(src="../image/img_author.jpg")
             .row
                 ul.list-menu.list-unstyle.list-inline
@@ -79,6 +79,50 @@ html(lang='es-PE')
                         a(href="") REGIONALES
                     li       
                         a(href="") MÁS SECCIONES
+                        i.fa.fa-caret-down
+    #temas                
+        .container-fluid
+            .row
+                .col-md-2
+                    img(src="../image/img-club.png")
+                .col-md-8
+                    .row            
+                        nav    
+                            ul.pagination.pagination-sm
+                                li       
+                                    a(href="") TEMAS DEL DÍA
+                                li
+                                    aria-label(Previous)
+                                    span &laquo;
+                                li       
+                                    a(href="") Globos de Oro
+                                li       
+                                    a(href="") Youtube
+                                li       
+                                    a(href="") PNP
+                                li       
+                                    a(href="") Charlie Hebdo
+                                li       
+                                    a(href="") FC Barcelona
+                                li       
+                                    a(href="") Alianza Lima
+                                li       
+                                    a(href="") Balón de Oro
+                                li       
+                                    a(href="") Alianza Lima
+                                li       
+                                    a(href="") Balón
+                                li
+                                    aria-label(Next)
+                                    span &raquo;
+                    .row
+                        h1.text-center Contáctese con nosotros
+
+                    
+
+                .col-md-2
+                    img(src="../image/navidad.png")
+                    
 
 
 

@@ -1,0 +1,11 @@
+.ml-2 {
+  margin-left: 2%;
+}
+
+.info {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  background-color: rgba(1, 0, 0, 0.5);
+  margin-right: 4%;
+}

@@ -1,0 +1,31 @@
+*{outline: 1px solid rgba(255,0,0,0.3);}
+$color_fondo1: #F4F5F7;
+$color_plomoletra: #9D9D9D;
+$color_button_top: #DD4A4A;
+$color_blanco: #FDF6F6;
+$color_facebook: #2666A2;
+$color_twitter: #4B7DD9;
+.top{
+	background: $color_fondo1;
+}
+.top img{
+	width: 1150px;
+}
+.top a{
+	color: $color_plomoletra;
+	font-weight: bold;
+}
+.top button{
+	background: $color_button_top;
+	color: $color_blanco;
+	border-radius: 10px;
+}
+.top i{
+	width: 35px;
+}
+.top i.fa-facebook{
+	color: $color_facebook;
+}
+.top i.fa-twitter{
+	color: $color_twitter;
+}

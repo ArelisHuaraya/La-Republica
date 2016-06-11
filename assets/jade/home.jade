@@ -28,9 +28,9 @@ html(lang='es-PE')
                     h1.text-center GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
                     ul.text-center.list-unstyled.list-inline
                         li
-                            span.ion-social-facebook
-                            span.ion-social-twitter
-                            span.ion-social-googleplus
+                            img.inline.img-responsive(src="../image/icon/face.png")
+                            img.inline.img-responsive(src="../image/icon/twitter.png")
+                            img.inline.img-responsive(src="../image/icon/google.png")
                         span.ion-record
                         li Hace 12 minutos
                         span.ion-record
@@ -42,13 +42,40 @@ html(lang='es-PE')
                                 h3.ml-2 JNE impulsará campaña en favor de la aprobación de la reforma electoral
                         .col-md-6
                             ul.list-unstyled
-                                li
-                                    .info
-                                        h4.ml-2 Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por s/.3 000 millones.
+                                li.mb-3
                                     img.relative.img-responsive(src="../image/img_grid_secundario.jpg")
-
+                                    .infoa.info
+                                        h4.ml-2 Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones.
+                                  
                                 li
-                                    img.relative.img-responsive(src="../image/img_grid_secundario2.jpg")
+                                    img.relative.img-responsive(src="../image/img_grid_secundario.jpg")
                                     .info
                                         h4.ml-2 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
+                    .columnistas.text-center
+                        h3.ib.box-red.text-center COLUMNISTAS
+                        .row
+                            .col-md-6
+                                .row
+                                    .col-md-4
+                                        img.img-thumbnail.img-responsive(src="../image/img-columnistas.jpg")
+                                        a
+                                            h5 Mario Vargas Llosa
+                                        h5 Megarrenuncia apulpinante
+                                    .col-md-4
+                                        img.img-thumbnail.img-responsive(src="../image/img_blogueros.jpg")
+                                        a
+                                            h5 Augusto ALvarez Rodrich
+                                        h5 Respuesta a una derrota estridente 
+                                    .col-md-4
+                                        img.img-thumbnail.img-responsive(src="../image/img-columnistas.jpg")
+                                        a
+                                            h5 Mario Vargas Llosa
+                                        h5 Megarrenuncia apulpinante  
+                            .col-md-6
+                                //- Declaration
+                                mixin row
+                                  .col-md-4
+                                    a trnrf
+                                //- Use
+                                +row   
                 .col-md-2

@@ -1,0 +1,190 @@
+// *{outline: 1px solid rgba(255,0,0,0.3);}
+$color_fondo1: #F4F5F7;
+$color_plomoletra: #9D9D9D;
+$color_button_top: #DD4A4A;
+$color_blanco: #FDF6F6;
+$color_facebook: #2666A2;
+$color_twitter: #4B7DD9;
+$color_google: #CB493B;
+$color_mail: #FFBF00;
+$color_rss: #FF8000;
+$color_menu: #BA1414;
+.top{
+	background: $color_fondo1;
+	width: 890px;
+}
+.top img{
+	width: 860px;
+}
+.popu{
+	padding: 20px 0;
+}
+.popu a{
+	color: $color_plomoletra;
+	font-weight: bold;
+}
+.top button.uno{
+	background: $color_button_top;
+	color: $color_blanco;
+	border-radius: 10px;
+	font-size: 8px;
+}
+.top i{
+	padding-right: 15px;
+}
+.top i.fa-facebook{
+	color: $color_facebook;
+}
+.top i.fa-twitter{
+	color: $color_twitter;
+}
+.top i.fa-google-plus{
+	color: $color_google;
+}
+.top i.fa-envelope-o{
+	color: $color_mail;
+}
+.top i.fa-rss{
+	color: $color_rss;
+}
+.top button.dos{
+	font-weight: bold;
+	font-size: 10px;
+}
+.top i.fa-search{
+	margin-top: 5px;
+	margin-right: -15px;
+}
+.republic{
+	width: 860px;
+	padding-top: 10px;
+}
+.republica{
+	padding: 20px 0; 
+}
+.logo{
+	padding-top: 15px;
+}
+.lideresa{
+  padding: 10px;
+  border: 2px solid #F4F5F7;
+  border-bottom: 2px solid #941010;
+  width: 275px;
+  height: 70px;
+}
+.lideresa h6{
+	font-weight: bold;
+}
+.domingo{
+	background-color: #941010;
+	color: #FFFFFF;
+	width: 65px;
+	z-index: 1;
+	position: relative;
+	margin-left: 90px;
+	margin-top: -20px;
+	font-weight: bold;
+}
+.habla h6{
+	margin-top: 55px;
+}
+.editorial{
+	width: 290px;
+	border: 2px solid #F4F5F7;
+}
+.editorial h6{
+	font-size: 15px;
+	font-weight: bold;
+}
+.editorial p{
+	font-family: inherit;
+}
+.editorial img.uno{
+	height: 65px;
+}
+.editorial img.dos{
+	margin-top: -65px;
+}
+.menu{
+  padding-top: 5px;
+  padding-left: 25px;
+  margin-left: -30px;
+  border: 2px solid #dfdfdf;
+  border-radius: 10px;
+  background-color: #BA1414;
+  width: 880px;
+}
+.menu li{
+  	border-right: 1px solid #dfdfdf;
+}
+.menu a{
+  	color: $color_blanco;
+  	font-size: 10px;
+}
+.temas img{
+	width: 170px;
+}
+.sub-menu{
+  	margin-left: -30px;
+  	width: 1000px;
+}
+.sub-menu ul li a{
+	font-size: 11.6px;
+	color: $color_plomoletra;
+	background-color: $color_fondo1;
+}
+.sub-menu.primero{
+	background-color: #000;
+}
+.contactese h1{
+	padding: 15px;
+	font-weight: bold;
+}
+.tablas{
+	padding: 40px 0;
+}
+.tablas input{
+	background-color: $color_fondo1;
+	border: 1px solid $color_plomoletra;
+}
+.tablas textarea{
+	background-color: $color_fondo1;
+	border: 1px solid $color_plomoletra;
+}
+.tablas button{
+	background-color: #0F0F0F;
+	color: $color_blanco;
+	padding: 5px 40px;
+}
+.tablas .radio{
+	font-size: 12px;
+}
+.tablas ul li{
+	font-size: 12px;
+}
+.footer{
+	background-color: $color_fondo1;
+}
+.foot .grupo{
+	margin-top: 105px;
+}
+.foot{
+	width: 870px;
+	padding-top: 20px;
+}
+.grupo h4{
+	font-weight: bold;
+}
+.foot ul li a{
+	color: $color_plomoletra;
+	font-size: 10px;
+}
+.footer-dos{
+	font-size: 9.8px;
+	color: $color_plomoletra;
+	padding-top: -15px;
+}
+.footer-dos li{
+	border-right: 1px solid $color_plomoletra;
+}
+

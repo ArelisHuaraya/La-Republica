@@ -18,6 +18,19 @@
   margin-bottom: 3%;
 }
 
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.col-md-5 {
+  padding-right: 0px;
+}
+
+.col-md-7 {
+  padding-right: 0px;
+}
+
 .info {
   position: absolute;
   bottom: 0px;
@@ -38,6 +51,10 @@
   margin-top: 0px;
 }
 
+.border-bottom {
+  border-bottom: 1px solid grey;
+}
+
 .columnistas {
   background-color: #bab3b2;
   margin-top: 3%;
@@ -53,4 +70,8 @@
   background: linear-gradient 45deg, #008080, #FFEBCD;
   padding-top: 40%;
   color: white;
+}
+
+.color-blue {
+  color: #008080;
 }

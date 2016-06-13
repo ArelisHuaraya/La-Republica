@@ -1,3 +1,4 @@
+include ci/mixin.jade
 doctype html
 html(lang='es-PE')
     head
@@ -52,27 +53,155 @@ html(lang='es-PE')
                     .columnistas.text-center
                         h3.ib.box-red.text-center COLUMNISTAS
                         .row
+                            .col-md-6.columnistas-list
+                                .row
+                                    +columnistas-list("../image/img-columnistas.jpg","Mario Vargas Llosa", "Megarrenuncia apulpinante")
+                                    +columnistas-list("../image/img_blogueros.jpg","Augusto Alvarez Rodrich", "Megarrenuncia apulpinante")
+                                    +columnistas-list("../image/img-columnistas.jpg","Mario Vargas Llosa", "Megarrenuncia apulpinante")
+                            .col-md-6.columnistas-list
+                                .row
+                                    +columnistas-list("../image/img_blogueros.jpg","Augusto Alvarez Rodrich", "Megarrenuncia apulpinante")
+                                    +columnistas-list("../image/img-columnistas.jpg","Mario Vargas Llosa", "Megarrenuncia apulpinante")
+                                    +columnistas-list("../image/img_blogueros.jpg","Augusto Alvarez Rodrich", "Megarrenuncia apulpinante")
+                    .noticias
+                        .row
+                            .col-md-8
+                                .row
+                                    .col-md-6
+                                        +noticias-peru("Mercado de Pases 2015","../image/img_especiales.jpg","Mercado de Pases 2015:altas, bajas y rumores de los equipos peruano","Todo sobre Mercado de Pases 2015")
+                                        +noticias-peru("Champions League","../image/img_especiales.jpg","¿Podrá el Real Madrid conseguir la 'Undécima'?","Todo sobre Champions League")
+                                    .col-md-6
+                                        +noticias-peru("Régimen Laboral Juvenil","../image/img_especiales_aside.jpg","Ollanta Humala:Los que han perdido más allá de tambores y panderetas, son 2 millones de jóvenes|VIDEO","Todo sobre Régimen Laboral Juvenil")
+                                        +noticias-peru("Súper Bowl","../image/img_especiales.jpg","Súper Bowl XLIX:New Englands Patriot se consagró campeón la NFL al ganar 28-24 a Seahawks|VIDEO","Todo sobre Súper Bowl")
+                                h3 ÚLTIMAS NOTICIAS
+                                .ultimas-noticias
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
+                                    +ultimas-noticias-Emma("Hace 1 hora, 12 mins","Emma Watson protagonizará 'La Bella y la Bestia'|VIDEO","../image/img_news.jpg","La actriz Emma Watson fue confirmada por Disney como la protagonista de la 'Bella y la Bestia' en la versión de carne y hueso","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Conga("Hace 1 hora, 12 mins","Roque Benavides respalda proyecto Tía María y espera que Conga se socialice","../image/img_news1.jpg","Zenaida Condori Contreras para el Presidente de la Compañía de Minas Buenaventura, Roque Benavides el pryecto Tía María, que promueve Southern Perú, ya debe ...","../image/icon/icon-3.png","../image/ico_comment.png","AREQUIPA")
+                                    +ultimas-noticias-Perro("Hace 1 hora, 12 mins","Youtube:Hombre finge ahogarse y su perro lo rescata|FOTOS","../image/img_news2.jpg","La lealtad de los animales hacia sus dueños es sorprendente y se mantiene firme bajo cualquier circunstancia.","../image/icon/icon-3.png","../image/ico_comment.png","ESPECTÁCULOS","../image/ico_comment.png")
+                                    +ultimas-noticias-Real-madrid("Hace 1 hora, 12 mins","Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid","../image/img_news3.jpg","Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la..","../image/icon/icon-3.png","../image/ico_comment.png","DEPORTES","../image/ico_comment.png")
 
-                                 //-MIXIN
-                            mixin columnistas-list(foto_col,nombre,noticia)
-                                .col-md-6.columnistas-list
-                                    .row
-                                        .col-md-4
-                                            img.img-responsive.img-thumbnail(src=foto_col)
-                                            h4=nombre
-                                            h5=noticia
-                                        .col-md-4
-                                            img.img-responsive.img-thumbnail(src=foto_col)
-                                            h4=nombre
-                                            h5=noticia
-                                        .col-md-4
-                                            img.img-responsive.img-thumbnail(src=foto_col)
-                                            h4=nombre
-                                            h5=noticia
+                            .col-md-4
+                                img.img-responsive(src="../image/banner-aside-home.jpg")
+                                img.img-responsive(src="../image/suscribete.png")
+                                .aweita-section
+                                    .aweita.text-center
+                                        img(src="../image/logo_aweita.jpg")
+                                    .aweita-not
+                                        +aweita-noticias("../image/img_aweita.jpg","Juan Román Riquelme, el adiós al 'Último 10' de Argentina")
+                                        +aweita-noticias("../image/img_aweita2.jpg","Lewis Carroll:un día como hoy nació el autor de Alicia...")
+                                        +aweita-noticias("../image/img_aweita.jpg","Juan Román Riquelme, el adiós al 'Último 10' de Argentina")
+                                        +aweita-noticias("../image/img_aweita2.jpg","Gameplay de 'Dead Kings',descargable de 'Assasin's")
+                                    .aweita.text-center
+                                        h5.text-center Más en AWEITA.COM
+                                .separadores
+                                    img.img-responsive.text-center(src="../image/img_sep1.png")
+                                    img.img-responsive(src="../image/img_fotodes_prominent.jpg")
+                                    h4.color-blue Lineas de Nazca: admiten prisión preventiva de 6 meses para activista de GreenDay.
+                                    +aweita-noticias("../image/img_fotodes.jpg","Uchuraccay:El pueblo que recibe con flores a quienes llegan a pie|FOTOS")
+                                    +aweita-noticias("../image/img_fotodes.jpg","Uchuraccay:El pueblo que recibe con flores a quienes llegan a pie|FOTOS")
+                                    +aweita-noticias("../image/img_fotodes.jpg","Uchuraccay:El pueblo que recibe con flores a quienes llegan a pie|FOTOS")
+                                .separadores
+                                    img.img-responsive.text-center(src="../image/img_sep2.png")
+                                    +especiales("../image/img_especiales_aside.jpg", "Régimen Laboral Juvenil")
+                                    +especiales("../image/img_especiales_aside.jpg", "COP 20")
+                                    +especiales("../image/img_especiales_aside.jpg", "Concentración de Medios")
+                                    +especiales("../image/img_especiales_aside.jpg", "Especies Peruanas en Peligro de Extinción")
+                                .separadores
+                                    img.img-responsive.text-center(src="../image/img_sep3.png")
+                                    +carlincatura("Carlincaturas 30-01-2015","../image/img_carlincatura_sd.jpg","Todas las Carlincaturas")
+                                .separadores
+                                    img.img-responsive.text-center(src="../image/img_sep4.png")
+                                    +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","Charlie Hebdo, historia que no debe repetirse")
+                                    +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","El único pulpin es Humala")
+                                    +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","Charlie Hebdo, historia que no debe repetirse")
+                                    +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","El único pulpin es Humala")
+                                    +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","Charlie Hebdo, historia que no debe repetirse")
+                                    +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","El único pulpin es Humala")
+                                    +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","Charlie Hebdo, historia que no debe repetirse")
+                                    +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","El único pulpin es Humala")
+                                    h5.text-center Todos los Blogs
+                                .separadores
+                                    img.img-responsive.text-center(src="../image/img_sep5.png")
+                                    +edicion1("La República-Lima","../image/portada.jpg")
+                                    +edicion2("../image/img_impreso_sd.jpg","Extorsionan a menores en colegio","La República-Norte")
+                                    +edicion2("../image/img_impreso_sd_politica_01.jpg","Lluvias en Arequipa inundan casas","La República-Sur")
+                                    +edicion2("../image/img_impreso_sd_politica_02.jpg","El ojo de Oblutas","Domingo")
+                                .separadores
+                                    img.img-responsive.text-center(src="../image/img_sep6.png")
+                                    +especiales("../image/img_especiales_aside.jpg", "Histórico cierre de fronteras")
+                                    +especiales("../image/img_especiales_aside.jpg", "Evolución de la pobreza e indigencia en América Latina")
+                                .libero-section
+                                    .libero.text-center
+                                        img(src="../image/logo_libero.jpg")
+                                    .libero-not
+                                        +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
+                                        +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
+                                        +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
+                                        +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
+                                    .libero.text-center
+                                        h5.text-center Más en Libero.pe
+                                .popular-section
+                                    .popular.text-center
+                                        img(src="../image/logo_popular.jpg")
+                                    .popular-not
+                                        +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
+                                        +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
+                                        +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
+                                        +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
+                                    .popular.text-center
+                                        h5.text-center Más en elPopular.pe
+                                .wapa-section
+                                    .wapa.text-center
+                                        img(src="../image/logo_wapa.jpg")
+                                    .wapa-not
+                                        +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
+                                        +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
+                                        +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
+                                        +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
+                                    .wapa.text-center
+                                        h5.text-center Más en Wapa.pe
 
-                            +columnistas-list("../image/img-columnistas.jpg","Mario Vargas Llosa", "Megarrenuncia apulpinante")
-                                .col-md-6.columnistas-list
-                            +columnistas-list("../image/img-columnistas.jpg","Mario Vargas Llosa", "Megarrenuncia apulpinante")
+
+
+
+
+
 
                               
      

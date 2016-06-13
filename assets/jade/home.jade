@@ -1,25 +1,79 @@
 doctype html
 html(lang='es-PE')
-  head
-    meta(charset='UTF-8')
-    title Home
-    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/main.css')
-    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
-    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-    script(type='text/javascript', src='js/bootstrap.min.js')
-    script(type='text/javascript', src='js/slick.min.js')
-    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
-    script(type='text/javascript', src='js/modernizr.custom.68172.js')
-    script(type='text/javascript', src='js/respond.js')
+    head
+        meta(charset='UTF-8')
+        title Home
+        link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='../css/dist/font-awesome.min.css')
+        link(rel='stylesheet', type='text/css', href='../css/dist/bootstrap.min.css')
+        link(rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+        link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
+        link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
+        link(rel='stylesheet', type='text/css', href='../css/dist/main.css')
+        link(rel='stylesheet', type='text/css', href='../css/home.css')
+        script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+        script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+        script(type='text/javascript', src='../js/bootstrap.min.js')
+        script(type='text/javascript', src='../js/slick.min.js')
+        script(type='text/javascript', src='../js/bootstrap-hover-dropdown.min.js')
+        script(type='text/javascript', src='../js/modernizr.custom.68172.js')
+        script(type='text/javascript', src='../js/respond.js')
   body
-    //escribe tu código html aquí  
+    .home
+        .container
+            .row
+                .col-md-2
+                .col-md-8
+                    h1.text-center GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
+                    ul.text-center.list-unstyled.list-inline
+                        li
+                            img.inline.img-responsive(src="../image/icon/face.png")
+                            img.inline.img-responsive(src="../image/icon/twitter.png")
+                            img.inline.img-responsive(src="../image/icon/google.png")
+                        span.ion-record
+                        li Hace 12 minutos
+                        span.ion-record
+                        li POLÍTICA
+                    .row
+                        .col-md-6.jne
+                            h3.ml-2 JNE impulsará campaña en favor de la aprobación de la reforma electoral
+                        .col-md-6
+                            ul.list-unstyled
+                                li.mb-3
+                                    img.relative.img-responsive(src="../image/img_grid_secundario.jpg")
+                                    .infoa.info
+                                        h4.ml-2 Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones.
+                                  
+                                li
+                                    img.relative.img-responsive(src="../image/img_grid_secundario.jpg")
+                                    .info
+                                        h4.ml-2 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
+                    .columnistas.text-center
+                        h3.ib.box-red.text-center COLUMNISTAS
+                        .row
 
-//- Aquí comienza Astrid
+                                 //-MIXIN
+                            mixin columnistas-list(foto_col,nombre,noticia)
+                                .col-md-6.columnistas-list
+                                    .row
+                                        .col-md-4
+                                            img.img-responsive.img-thumbnail(src=foto_col)
+                                            h4=nombre
+                                            h5=noticia
+                                        .col-md-4
+                                            img.img-responsive.img-thumbnail(src=foto_col)
+                                            h4=nombre
+                                            h5=noticia
+                                        .col-md-4
+                                            img.img-responsive.img-thumbnail(src=foto_col)
+                                            h4=nombre
+                                            h5=noticia
 
-//- Aquí comienza Dulce
+                            +columnistas-list("../image/img-columnistas.jpg","Mario Vargas Llosa", "Megarrenuncia apulpinante")
+                                .col-md-6.columnistas-list
+                            +columnistas-list("../image/img-columnistas.jpg","Mario Vargas Llosa", "Megarrenuncia apulpinante")
+
+                              
+     
+                .col-md-2

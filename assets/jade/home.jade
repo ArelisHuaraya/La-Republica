@@ -36,10 +36,8 @@ html(lang='es-PE')
                         span.ion-record
                         li POLÍTICA
                     .row
-                        .col-md-6
-                            img.relative.img-responsive(src="../image/img_grid_principal.jpg")
-                            .info
-                                h3.ml-2 JNE impulsará campaña en favor de la aprobación de la reforma electoral
+                        .col-md-6.jne
+                            h3.ml-2 JNE impulsará campaña en favor de la aprobación de la reforma electoral
                         .col-md-6
                             ul.list-unstyled
                                 li.mb-3
@@ -54,28 +52,28 @@ html(lang='es-PE')
                     .columnistas.text-center
                         h3.ib.box-red.text-center COLUMNISTAS
                         .row
-                            .col-md-6
-                                .row
-                                    .col-md-4
-                                        img.img-thumbnail.img-responsive(src="../image/img-columnistas.jpg")
-                                        a
-                                            h5 Mario Vargas Llosa
-                                        h5 Megarrenuncia apulpinante
-                                    .col-md-4
-                                        img.img-thumbnail.img-responsive(src="../image/img_blogueros.jpg")
-                                        a
-                                            h5 Augusto ALvarez Rodrich
-                                        h5 Respuesta a una derrota estridente 
-                                    .col-md-4
-                                        img.img-thumbnail.img-responsive(src="../image/img-columnistas.jpg")
-                                        a
-                                            h5 Mario Vargas Llosa
-                                        h5 Megarrenuncia apulpinante  
-                            .col-md-6
-                                //- Declaration
-                                mixin row
-                                  .col-md-4
-                                    img 
-                                //- Use
-                                +row   
+
+                                 //-MIXIN
+                            mixin columnistas-list(foto_col,nombre,noticia)
+                                .col-md-6.columnistas-list
+                                    .row
+                                        .col-md-4
+                                            img.img-responsive.img-thumbnail(src=foto_col)
+                                            h4=nombre
+                                            h5=noticia
+                                        .col-md-4
+                                            img.img-responsive.img-thumbnail(src=foto_col)
+                                            h4=nombre
+                                            h5=noticia
+                                        .col-md-4
+                                            img.img-responsive.img-thumbnail(src=foto_col)
+                                            h4=nombre
+                                            h5=noticia
+
+                            +columnistas-list("../image/img-columnistas.jpg","Mario Vargas Llosa", "Megarrenuncia apulpinante")
+                                .col-md-6.columnistas-list
+                            +columnistas-list("../image/img-columnistas.jpg","Mario Vargas Llosa", "Megarrenuncia apulpinante")
+
+                              
+     
                 .col-md-2

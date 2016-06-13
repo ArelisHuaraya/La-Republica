@@ -43,3 +43,14 @@
   margin-top: 3%;
   border-top: 5px solid #e52325;
 }
+
+.columnistas-list {
+  background-color: #bab3b2;
+}
+
+.jne {
+  background-image: url("../image/img_grid_principal.jpg");
+  background: linear-gradient 45deg, #008080, #FFEBCD;
+  padding-top: 40%;
+  color: white;
+}

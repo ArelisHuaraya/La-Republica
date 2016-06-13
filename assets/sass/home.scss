@@ -38,4 +38,12 @@ $background_gris:#bab3b2;
 	margin-top:3%;
 	border-top:5px solid $color_guinda;
 }
-
+.columnistas-list{
+	background-color:$background_gris;
+}
+.jne{
+	background-image:url('../image/img_grid_principal.jpg');
+	background:linear-gradient (45deg, #008080, #FFEBCD);
+	padding-top:40%;
+	color:white;
+}

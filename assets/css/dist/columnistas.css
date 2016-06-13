@@ -1,0 +1,153 @@
+* {
+  outline: 1px solid rgba(225, 0, 0, 0.4);
+}
+
+.BLOG {
+  text-align: center;
+}
+h2 {
+  font-size: arial;
+  font-size: 1.5em;
+  font-weight: bolder;
+  
+}
+h4{
+	font-size: 12px;
+	font-weight: bold;
+}
+.lo{
+	color: #536A9D;
+	font-weight: bolder;
+}
+
+
+
+.dos {
+  width: 32.33%;
+  height:230px;
+  padding-left:  3px;
+  padding-right: 3px;
+  border: 3px solid #EEEEEE;
+  margin: 5px;
+
+}
+.tres{
+	padding: 2px;
+	
+}
+.color div img {
+margin-right: 23px;	
+margin-top: 15px;
+
+}
+.cinco div img{
+margin-left: 6px;	
+margin-top: 2px;
+}
+.blogs h2{
+padding-bottom:25px;
+}
+.color{
+	background:#EEEEEE;
+	width: 95%;
+	margin-left: 10px;
+	margin-right: 6px;
+	height: 100px;
+	padding: 4px;
+}
+.seis{	
+margin-top: 13px;	
+}
+.siete div img{
+margin-right: 45px;	
+margin-top: 15px;
+}
+
+.seis p{
+padding-left: 18px;
+}
+.cero p span {
+	font-weight: bolder;
+	font-size: 40px;
+	font-family: arial;
+
+}
+.mg img{
+	margin:0px;
+
+
+
+}
+.na{
+	width: 55%;
+}
+
+.lo{
+	margin-left:0px;
+	margin-right:0px;
+}
+.menos{
+	margin: 10px;
+}
+.blog{
+	width: 12.33%;
+}
+.nen{
+	width: 22.33%;
+}
+/*.BOL{
+	background:red;
+	padding-left:33px;
+	height:65px;
+	width: 820px;
+	margin-left: 145px;
+	
+}
+.dor{
+	margin-right:4px;
+}
+.LOG{
+	margin: 50px;
+
+
+}*/
+.LOG{ 
+text-align: center;
+padding-left: 73px;}
+.ner{
+	margin-top:7px;
+	width:98%;
+	padding-right: 100px;
+
+}
+.bros {
+	background:#EEEEEE;
+}
+.LOG img {
+	width: 70px;
+	height: 70px;
+}
+.medium
+{background:#F32F07;
+padding:13px;
+margin-left: 100px;
+margin-right:100px;
+}
+.LOG.lugar.bros img {
+padding-right: 2px;
+}
+
+}
+.bo{
+	font-weight:22px;
+}
+.LOG p:last-child{
+	color:#363AA9;
+	font-weight: bold;
+
+}
+.LOG p:first-child{
+	color:black;
+	font-weight: bold;
+
+}

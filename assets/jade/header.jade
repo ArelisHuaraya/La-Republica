@@ -21,8 +21,8 @@ html(lang='es-PE')
     #header-section
         .container.top
             img(src="../image/banner_top.jpg")
-            .row
-                .col-md-5
+            .row.popu
+                .col-md-7
                     ul.list-menu.list-unstyled.list-inline
                         li
                             a.small(href="") LIBERO.PE
@@ -30,34 +30,30 @@ html(lang='es-PE')
                             a.small(href="") EL POPULAR.PE
                         li
                             a.small(href="") FUNDACIÓN GUSTAVO MOHME LLONA
-                .col-md-7
-                    .row
-                        .col-md-4
-                            button.btn.btn-default.pull-right SUSCRÍBETE AL BOLETIN
-
-                        .col-md-4
-                            span
-                                i.fa.fa-facebook
-                                i.fa.fa-twitter
-                                i.fa.fa-google-plus
-                                i.fa.fa-envelope-o
-                                i.fa.fa-rss
-                        .col-md-4
-                            input.buscador.srilo_lt(type="text" id="buscar" placeholder="BUSCAR")
-                            i.fa.fa-search
-    #header-menu
-        .container.menu
-            .row
+                .col-md-5.buscar                    
+                    button.uno.btn.btn-default.small SUSCRÍBETE AL BOLETIN
+                    i.fa.fa-facebook
+                    i.fa.fa-twitter
+                    i.fa.fa-google-plus
+                    i.fa.fa-envelope-o
+                    i.fa.fa-rss
+                    button.dos BUSCAR
+                    i.fa.fa-search.pull-right
+    #header-section2
+        .container.republic
+            .row.republica
                 .col-md-4
-                    img(src="../image/logo-la-republica.jpg")
+                    img.logo(src="../image/logo-la-republica.jpg")
+                .col-md-4.lideresa
+                    h6.text-center.domingo DOMINGO
+                    h6.habla HABLA LA LIDERESA DEL NACIONALISMO
                 .col-md-4
-                    p HABLA LA LIDERESA DEL NACIONALISMO
-                .col-md-3
-                    p La corrupción, los orígenes
-                    p por: Gustavo Mohme LLona
-                .col-md-1
-                    img(src="../image/img_author.jpg")
-            .row
+                    .editorial
+                        img.uno(src="../image/img_editorial_text.jpg").pull-left
+                        h6 La corrupción, los orígenes
+                        p por: Gustavo Mohme LLona
+                        img.dos(src="../image/img_author.jpg").pull-right
+            .row.menu
                 ul.list-menu.list-unstyle.list-inline
                     li       
                         a(href="") POLÍTICA
@@ -77,51 +73,23 @@ html(lang='es-PE')
                         a(href="") ED. IMPRESA
                     li       
                         a(href="") REGIONALES
-                    li       
-                        a(href="") MÁS SECCIONES
-                        i.fa.fa-caret-down
+                    li.dopdrown       
+                        a(href="").dopdrown-toggle MÁS SECCIONES
+                        span.caret                     
     #temas                
-        .container-fluid
+        .container-fluid.temas
             .row
                 .col-md-2
                     img(src="../image/img-club.png")
                 .col-md-8
-                    .row            
-                        nav    
-                            ul.pagination.pagination-sm
-                                li       
-                                    a(href="") TEMAS DEL DÍA
-                                li
-                                    aria-label(Previous)
-                                    span &laquo;
-                                li       
-                                    a(href="") Globos de Oro
-                                li       
-                                    a(href="") Youtube
-                                li       
-                                    a(href="") PNP
-                                li       
-                                    a(href="") Charlie Hebdo
-                                li       
-                                    a(href="") FC Barcelona
-                                li       
-                                    a(href="") Alianza Lima
-                                li       
-                                    a(href="") Balón de Oro
-                                li       
-                                    a(href="") Alianza Lima
-                                li       
-                                    a(href="") Balón
-                                li
-                                    aria-label(Next)
-                                    span &raquo;
-                    .row
-                        h1.text-center Contáctese con nosotros
-
                     
-
                 .col-md-2
                     img(src="../image/navidad.png")
+
+    
+
+
+
                     
 
 

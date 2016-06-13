@@ -1,0 +1,56 @@
+.ml-2 {
+  margin-left: 2%;
+}
+
+.top {
+  top: 30px;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.mb-3 {
+  margin-bottom: 3%;
+}
+
+.info {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  background-color: rgba(1, 0, 0, 0.5);
+  margin-right: 4%;
+}
+
+.infoa {
+  position: absolute;
+  margin-bottom: 55%;
+}
+
+.box-red {
+  background-color: #e52325;
+  color: #fff;
+  border: 1px solid #e52325;
+  margin-top: 0px;
+}
+
+.columnistas {
+  background-color: #bab3b2;
+  margin-top: 3%;
+  border-top: 5px solid #e52325;
+}
+
+.columnistas-list {
+  background-color: #bab3b2;
+}
+
+.jne {
+  background-image: url("../image/img_grid_principal.jpg");
+  background: linear-gradient 45deg, #008080, #FFEBCD;
+  padding-top: 40%;
+  color: white;
+}

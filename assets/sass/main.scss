@@ -115,22 +115,26 @@ $color_menu: #BA1414;
   width: 880px;
 }
 .menu li{
-  border-right: 1px solid #dfdfdf;
+  	border-right: 1px solid #dfdfdf;
 }
 .menu a{
-  color: $color_blanco;
-  font-size: 10px;
+  	color: $color_blanco;
+  	font-size: 10px;
 }
 .temas img{
 	width: 170px;
 }
 .sub-menu{
-  margin-left: -30px;
-  width: 1000px;
+  	margin-left: -30px;
+  	width: 1000px;
 }
 .sub-menu ul li a{
 	font-size: 11.6px;
 	color: $color_plomoletra;
+	background-color: $color_fondo1;
+}
+.sub-menu.primero{
+	background-color: #000;
 }
 .contactese h1{
 	padding: 15px;

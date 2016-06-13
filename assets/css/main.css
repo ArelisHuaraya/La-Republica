@@ -176,18 +176,12 @@
   border: 1px solid #9D9D9D;
 }
 
-.tablas button {
-  background-color: #0F0F0F;
-  color: #FDF6F6;
-  padding: 5px 40px;
+.tablas h5 {
+  font-size: 13px;
 }
 
-.tablas .radio {
-  font-size: 12px;
-}
-
-.tablas ul li {
-  font-size: 12px;
+.tablas img {
+  margin: auto;
 }
 
 .footer {

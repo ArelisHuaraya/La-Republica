@@ -151,17 +151,12 @@ $color_menu: #BA1414;
 	background-color: $color_fondo1;
 	border: 1px solid $color_plomoletra;
 }
-.tablas button{
-	background-color: #0F0F0F;
-	color: $color_blanco;
-	padding: 5px 40px;
+.tablas h5{
+	font-size: 13px;
 }
-.tablas .radio{
-	font-size: 12px;
-}
-.tablas ul li{
-	font-size: 12px;
-}
+.tablas img{
+  	margin: auto;
+ }
 .footer{
 	background-color: $color_fondo1;
 }

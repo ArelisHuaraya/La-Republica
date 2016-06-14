@@ -2,7 +2,7 @@ doctype html
 html(lang='es-PE')
   head
     meta(charset='UTF-8')
-    title Home
+    title Contacto
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
     link(rel='stylesheet', type='text/css', href='../css/dist/font-awesome.min.css')
@@ -12,23 +12,24 @@ html(lang='es-PE')
     link(rel='stylesheet', type='text/css', href='../css/main.css')
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
     script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-    script(type='text/javascript', src='js/bootstrap.min.js')
-    script(type='text/javascript', src='js/slick.min.js')
-    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
-    script(type='text/javascript', src='js/modernizr.custom.68172.js')
-    script(type='text/javascript', src='js/respond.js')
+    script(type='text/javascript', src='../js/bootstrap.min.js')
+    script(type='text/javascript', src='../js/slick.min.js')
+    script(type='text/javascript', src='../js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='../js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='../js/respond.js')
   body
-     #temas                
-        .container-fluid.temas
+    include header.jade
+    #temas                
+        .container.temas
             .row
                 .col-md-2
-                    
+                    img(src="../image/img-club.png")                 
                 .col-md-8
                     .row.contactese
                         h1.text-center.strong Contáctese con nosotros
                         p Llena este formulario si necesita enviarnos alguna información acerca del contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio. Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
                     .row.tablas   
-                        .col-md-8.col-md-offset-2                      
+                        .col-md-8.col-md-offset-2                  
                             form
                                 .form-group
                                     label.sr-only(for="exampleInputEmail1") Email
@@ -42,67 +43,31 @@ html(lang='es-PE')
                                     p.small.center (Opcional)
                             h4 Elija un destinatario
                             .row
-                                .col-md-6
+                                .col-md-12.form-group(style="padding-left:35px; padding-right:10px;")
                                     .radio
-                                        label
-                                            input(type="radio" name="optionsRadios" id="optionsRadios1" value="option1")
-                                            p Sugerencia para el sitio web
-                                            br
-                                            br
+                                        input(type="radio", name="optionRadios") 
+                                        h5 Sugerencia para el sitio web <span(  class="pull-right")>(Ej: funcionamiento y mejoras para el sitio)
                                     .radio
-                                        label
-                                            input(type="radio" name="optionsRadios" id="optionsRadios1" value="option1")
-                                            p Sugerencia para el sitio web
-                                            br
-                                            br
+                                        input(type="radio", name="optionRadio") 
+                                        h5 Direccion Periodistica <span( class="pull-right")>(Ej: Sugerencia para la nota de prensa)
                                     .radio
-                                        label
-                                            input(type="radio" name="optionsRadios" id="optionsRadios1" value="option1")
-                                            p Sugerencia para el sitio web
-                                            br
-                                            br
+                                        input(type="radio", name="optionRadio")
+                                        h5 Direccion Comercial <span( class="pull-right")>(Ej: Publicidad en Diarios o sitios web)  
                                     .radio
-                                        label
-                                            input(type="radio" name="optionsRadios" id="optionsRadios1" value="option1")
-                                            p Sugerencia para el sitio web
-                                            br
-                                            br
+                                        input(type="radio", name="optionRadio")
+                                        h5 Cartas al director <span( class="pull-right")>(Ej: Denuncias, comentarios e impresiones)
                                     .radio
-                                        label
-                                            input(type="radio" name="optionsRadios" id="optionsRadios1" value="option1")
-                                            p Sugerencia para el sitio web
-                                            br
-                                            br
+                                        input(type="radio", name="optionRadio")
+                                        h5 Promociones y productos del diario <span( class="pull-right")>(Ej: Promociones, Tablet,etc)    
                                     .radio
-                                        label
-                                            input(type="radio" name="optionsRadios" id="optionsRadios1" value="option1")
-                                            p Sugerencia para el sitio web
-                                            br
-                                            br
-                                .col-md-6
-                                    br
-                                    ul.list-unstyled.pull-right
-                                        li (Ej. funcionamiento y mejoras para el sitio)
-                                        br
-                                        br
-                                        li (Ej. Sugerencia para la nota de prensa)
-                                        br
-                                        br
-                                        li (Ej.  funcionamiento y mejoras para el sitio)
-                                        br
-                                        br
-                                        li (Ej. Sugerencia para la nota de prensa)
-                                        br
-                                        br
-                                        li (Ej.  funcionamiento y mejoras para el sitio)
-                                        br
-                                        br
-                                        li (Ej. Sugerencia para la nota de prensa)
-                                        br
-                                        br
+                                        input(type="radio", name="optionRadio")
+                                        h5 Archivo Periodistico <span( class="pull-right")>(Ej: Ediciones impresas/fotos)
+                            form
                                 .form-group
                                     textarea.form-control(rows=3)(placeholder="Mensaje")
-                                    button(type="submit").btn.btn-default ENVIAR
-                 
+                                    br
+                                    img.img-responsive.center(src="../image/contacto_submit_btn.jpg") 
                 .col-md-2
+                    img(src="../image/navidad.png")
+    include footer.jade
                     

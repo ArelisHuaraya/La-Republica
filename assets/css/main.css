@@ -138,12 +138,8 @@
   font-size: 10px;
 }
 
-.temas img {
-  width: 170px;
-}
-
 .sub-menu {
-  margin-left: -30px;
+  margin-left: -55px;
   width: 1000px;
 }
 
@@ -176,18 +172,12 @@
   border: 1px solid #9D9D9D;
 }
 
-.tablas button {
-  background-color: #0F0F0F;
-  color: #FDF6F6;
-  padding: 5px 40px;
+.tablas h5 {
+  font-size: 13px;
 }
 
-.tablas .radio {
-  font-size: 12px;
-}
-
-.tablas ul li {
-  font-size: 12px;
+.tablas img {
+  margin: auto;
 }
 
 .footer {
@@ -203,7 +193,7 @@
   padding-top: 20px;
 }
 
-.grupo h4 {
+.grupo h5 {
   font-weight: bold;
 }
 
@@ -213,11 +203,12 @@
 }
 
 .footer-dos {
-  font-size: 9.8px;
+  font-size: 9.7px;
   color: #9D9D9D;
   padding-top: -15px;
 }
 
 .footer-dos li {
   border-right: 1px solid #9D9D9D;
+  margin-left: 5px;
 }

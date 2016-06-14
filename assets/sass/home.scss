@@ -64,3 +64,48 @@ $color_azul:#008080;
 .color-blue{
 	color:$color_azul;
 }
+.block-encuesta{
+    background: url(../image/fondo_encuesta.jpg) repeat left top;
+    padding: 2.5em .5em .8em .5em;
+    margin: 0 0 30px;}
+.pregunta{
+	background-color:white;
+	padding:7%;
+}
+#hoy{
+	margin-bottom:5%;
+}
+.border{
+	border:2px solid grey;
+	padding:1%;
+	margin-bottom:5%;
+}
+#red{
+	border-bottom:7px solid red;
+}
+#yellow{
+	border-bottom:7px solid yellow;
+}
+#purple{
+	border-bottom:7px solid purple;
+}
+.mr-b{
+	margin-bottom:10%;
+}
+#red-b{
+	background-color:$color_guinda;
+	border:none;
+	color:white;
+}
+.detalle{
+	background-color: rgba(255, 255, 255, 0.8);
+	position: relative;
+	bottom:60px;
+	padding:3%;
+}
+.detalle-gra{
+	background: linear-gradient(to bottom, rgba(145,145,145,0.53) 0%, rgba(171,171,171,0.53) 0%, rgba(135,135,135,0.53) 34%, rgba(82,82,82,0.53) 45%, rgba(82,82,82,0.53) 68%, rgba(54,54,54,0.53) 91%, rgba(33,33,33,0.53) 95%, rgba(33,33,33,0.53) 98%, rgba(33,33,33,0) 100%);
+}
+#color-red{
+	color:$color_guinda;
+}

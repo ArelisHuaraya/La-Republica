@@ -1,36 +1,28 @@
 doctype html
 html(lang='es-PE')
-  head
-    meta(charset='UTF-8')
-    title Columnistas
-    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
-<<<<<<< HEAD
-<<<<<<< HEAD
-    link(rel='stylesheet', type='text/css', href='../css/main.css')
-=======
-    link(rel='stylesheet', type='text/css', href='../css/dist/jquery.bxslider.css')
->>>>>>> origin/master
-=======
-    link(rel='stylesheet', type='text/css', href='../css/dist/jquery.bxslider.css')
->>>>>>> origin/master
-    link(rel='stylesheet', type='text/css', href='../css/blogs.css')
-    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
-    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-    script(type='text/javascript', src='../js/bootstrap.min.js')
-    script(type='text/javascript', src='../js/slick.min.js')
-    script(type='text/javascript', src='../js/bootstrap-hover-dropdown.min.js')
-    script(type='text/javascript', src='../js/modernizr.custom.68172.js')
-    script(type='text/javascript', src='../js/respond.js')
-  body.container
+    head
+        meta(charset='UTF-8')
+        title Home
+        link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='../css/dist/font-awesome.min.css')
+        link(rel='stylesheet', type='text/css', href='../css/dist/bootstrap.min.css')
+        link(rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+        link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
+        link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
+        link(rel='stylesheet', type='text/css', href='../css/main.css')
+        link(rel='stylesheet', type='text/css', href='../css/blogs.css')
+        script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+        script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+        script(type='text/javascript', src='../js/bootstrap.min.js')
+        script(type='text/javascript', src='../js/slick.min.js')
+        script(type='text/javascript', src='../js/bootstrap-hover-dropdown.min.js')
+        script(type='text/javascript', src='../js/modernizr.custom.68172.js')
+        script(type='text/javascript', src='../js/respond.js')
+  body
     .header
-      .container
-        include header.jade
+        .container
+            include header.jade
     .row
       .col-md-2
         img(src="../image/img-club.png")
@@ -591,4 +583,4 @@ html(lang='es-PE')
                       h5 Defensa
       .col-md-2
         img(src="../image/navidad.png")
-  //- include footer.jade
+   include footer.jade

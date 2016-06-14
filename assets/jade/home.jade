@@ -11,7 +11,7 @@ html(lang='es-PE')
         link(rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
         link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
         link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
-        link(rel='stylesheet', type='text/css', href='../css/dist/main.css')
+        link(rel='stylesheet', type='text/css', href='../css/main.css')
         link(rel='stylesheet', type='text/css', href='../css/home.css')
         script(src='http://code.jquery.com/jquery-1.11.2.min.js')
         script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
@@ -21,7 +21,9 @@ html(lang='es-PE')
         script(type='text/javascript', src='../js/modernizr.custom.68172.js')
         script(type='text/javascript', src='../js/respond.js')
   body
-    include header.jade
+    .header
+        .container
+            include header.jade
     .home
         .container
             .row
@@ -44,13 +46,13 @@ html(lang='es-PE')
                         .col-md-6
                             ul.list-unstyled
                                 li.mb-3
-                                    img.relative.img-responsive(src="../image/img_grid_secundario.jpg")
-                                    .infoa.info
-                                        h4.ml-2 Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones.
+                                    .detalle-gra
+                                        img.relative.img-responsive(src="../image/img_grid_secundario.jpg")
+                                        h4.pull-bottom.ml-2 Martin Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones.
                                   
                                 li
-                                    img.relative.img-responsive(src="../image/img_grid_secundario.jpg")
-                                    .info
+                                    .detalle-gra
+                                        img.relative.img-responsive(src="../image/img_grid_secundario.jpg")
                                         h4.ml-2 Sub-20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final de Sudamericano | VIDEO
                     .columnistas.text-center
                         h3.ib.box-red.text-center COLUMNISTAS
@@ -120,17 +122,21 @@ html(lang='es-PE')
 
                             .col-md-4
                                 img.img-responsive(src="../image/banner-aside-home.jpg")
-                                img.img-responsive(src="../image/suscribete.png")
-                                .aweita-section
-                                    .aweita.text-center
-                                        img(src="../image/logo_aweita.jpg")
-                                    .aweita-not
-                                        +aweita-noticias("../image/img_aweita.jpg","Juan Román Riquelme, el adiós al 'Último 10' de Argentina")
-                                        +aweita-noticias("../image/img_aweita2.jpg","Lewis Carroll:un día como hoy nació el autor de Alicia...")
-                                        +aweita-noticias("../image/img_aweita.jpg","Juan Román Riquelme, el adiós al 'Último 10' de Argentina")
-                                        +aweita-noticias("../image/img_aweita2.jpg","Gameplay de 'Dead Kings',descargable de 'Assasin's")
-                                    .aweita.text-center
-                                        h5.text-center Más en AWEITA.COM
+                                .block-encuesta.text-center
+                                    .pregunta
+                                        img(src="../image/img_sucribe.png")
+                                        +suscribete("Suscríbete a Nuestro Boletín","...@hotmail.com","SUSCRIBIRSE")
+                                .border#purple
+                                    .aweita-section
+                                        .aweita.text-center
+                                            img.mr-b(src="../image/logo_aweita.jpg")
+                                        .aweita-not
+                                            +aweita-noticias("../image/img_aweita.jpg","Juan Román Riquelme, el adiós al 'Último 10' de Argentina")
+                                            +aweita-noticias("../image/img_aweita2.jpg","Lewis Carroll:un día como hoy nació el autor de Alicia...")
+                                            +aweita-noticias("../image/img_aweita.jpg","Juan Román Riquelme, el adiós al 'Último 10' de Argentina")
+                                            +aweita-noticias("../image/img_aweita2.jpg","Gameplay de 'Dead Kings',descargable de 'Assasin's")
+                                        .aweita.text-center
+                                            h5#color-red.text-center Más en AWEITA.COM
                                 .separadores
                                     img.img-responsive.text-center(src="../image/img_sep1.png")
                                     img.img-responsive(src="../image/img_fotodes_prominent.jpg")
@@ -157,7 +163,7 @@ html(lang='es-PE')
                                     +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","El único pulpin es Humala")
                                     +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","Charlie Hebdo, historia que no debe repetirse")
                                     +blogueros("../image/img_blogueros.jpg","Augusto Alvarez Rodrich","El único pulpin es Humala")
-                                    h5.text-center Todos los Blogs
+                                    h5#color-red.text-center Todos los Blogs
                                 .separadores
                                     img.img-responsive.text-center(src="../image/img_sep5.png")
                                     +edicion1("La República-Lima","../image/portada.jpg")
@@ -168,44 +174,50 @@ html(lang='es-PE')
                                     img.img-responsive.text-center(src="../image/img_sep6.png")
                                     +especiales("../image/img_especiales_aside.jpg", "Histórico cierre de fronteras")
                                     +especiales("../image/img_especiales_aside.jpg", "Evolución de la pobreza e indigencia en América Latina")
-                                .libero-section
-                                    .libero.text-center
-                                        img(src="../image/logo_libero.jpg")
-                                    .libero-not
-                                        +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
-                                        +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
-                                        +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
-                                        +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
-                                    .libero.text-center
-                                        h5.text-center Más en Libero.pe
-                                .popular-section
-                                    .popular.text-center
-                                        img(src="../image/logo_popular.jpg")
-                                    .popular-not
-                                        +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
-                                        +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
-                                        +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
-                                        +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
-                                    .popular.text-center
-                                        h5.text-center Más en elPopular.pe
-                                .wapa-section
-                                    .wapa.text-center
-                                        img(src="../image/logo_wapa.jpg")
-                                    .wapa-not
-                                        +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
-                                        +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
-                                        +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
-                                        +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
-                                    .wapa.text-center
-                                        h5.text-center Más en Wapa.pe
-
-
-
-
-
-
-
-                              
-     
+                                .block-encuesta.text-center
+                                    .pregunta#hoy
+                                        img(src="../image/img_pregunta.png")
+                                        +pregunta("La pregunta de hoy","¿Cree usted que la premier Ana Jara deba renunciar?","sí","no","VOTAR","Ver Resultados")
+                                    .pregunta
+                                        +pregunta("La pregunta de ayer","¿Cree usted que se militarizó la conmemoración del fallo de la Haya en Lima?","___55%___","__22%__","Ver Resultados")
+                                .border#red
+                                    .libero-section
+                                        .libero.text-center
+                                            img.mr-b(src="../image/logo_libero.jpg")
+                                        .libero-not
+                                            +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
+                                            +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
+                                            +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
+                                            +libero-noticias("../image/thumb-post-image.jpg","Florentina empató 1-1 con su visita al Genoa|VIDEO")
+                                        .libero.text-center
+                                            h5#color-red.text-center Más en Libero.pe
+                                .border#yellow
+                                    .popular-section
+                                        .popular.text-center
+                                            img.mr-b(src="../image/logo_popular.jpg")
+                                        .popular-not
+                                            +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
+                                            +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
+                                            +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
+                                            +popular-noticias("../image/img_popular.png","Jhosua Ivanoff está loco por olor de Melissa Loza|VIDEO")
+                                        .popular.text-center
+                                            h5#color-red.text-center Más en elPopular.pe
+                                .border#red
+                                    .wapa-section
+                                        .wapa.text-center
+                                            img.mr-b(src="../image/logo_wapa.jpg")
+                                        .wapa-not
+                                            +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
+                                            +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
+                                            +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
+                                            +wapa-noticias("../image/img_wapa.png","¿Cómo renovar el guardarropa de los pequeños?")
+                                        .wapa.text-center
+                                            h5#color-red.text-center Más en Wapa.pe
+                                .block-encuesta.text-center
+                                    .pregunta#hoy
+                                        img(src="../image/img_reporteroc.png")
+                                        +reporte("Reporte Ciudadano","../image/img_sd_reporteroc.jpg","Estacionamiento Indebido","¿Está permitido que dejen sus autos reiteradas veces todas las noches en su casa?","ENVIAR FOTOS","Más Fotos")
                 .col-md-2
                     img(src="../image/navidad.png")
+    .footer
+        include footer.jade

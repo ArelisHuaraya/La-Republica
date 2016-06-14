@@ -4,9 +4,9 @@ mixin columnistas-list(foto_col,nombre,noticia)
                 h4=nombre
                 h5=noticia
 mixin noticias-peru(titulo,img_not,info,sub_t)
-    ul.list-unstyled
+    ul.list-unstyled.text-center
         li 
-            h5=titulo
+            h5#color-red=titulo
             img.img-responsive(src=img_not)
             h6=info
             h5=sub_t
@@ -76,7 +76,10 @@ mixin ultimas-noticias-Real-madrid(hora,titulo,img_ult,descrip,icon,msg,tema)
                         img.ib(src=msg)
                         p.ib.small=tema
                         img(src=msg)
-
+mixin suscribete(titulo,input,suscribete)
+    h5.text-center=titulo
+    input=input
+    button#red-b=suscribete
 mixin aweita-noticias(img_a,info)
     .row
         .col-md-5
@@ -87,14 +90,15 @@ mixin especiales(img_esp,text)
     ul.list-unstyled
         li 
             img.img-responsive(src=img_esp)
-        li 
-            h5.text-center=text
+            .detalle
+                h5.text-center=text
+            
 mixin carlincatura(titulo,img_car,more)
     ul.list-unstyled
         li 
             h5.text-center=titulo
             img.img-responsive(src=img_car)
-            h5.text-center=more
+            h5#color-red.text-center=more
 mixin blogueros(img_blog,nombre,titulo)
     .row
         .col-md-5
@@ -111,7 +115,16 @@ mixin edicion2(img_ed,nombre,titulo)
             img.img-responsive(src=img_ed)
         .col-md-7
             p.small=nombre
-            a=titulo
+            a#color-red=titulo
+mixin pregunta(titulo,pregunta,alternativa1,alternativa2,votar,resultados)
+    h4.text-center=titulo
+    h6=pregunta
+    button=alternativa1
+    button=alternativa2
+    ul.list-unstyled
+        li
+            button#red-b.ib=votar
+    a#color-red=resultados
 mixin libero-noticias(img_a,info)
     .row
         .col-md-5
@@ -130,4 +143,13 @@ mixin wapa-noticias(img_a,info)
             img.img-responsive(src=img_a)
         .col-md-7
             p.small=info
+mixin reporte(titulo,img_rep,sub_t,description,enviar,more)
+    h4.text-center=titulo
+    img.img-responsive(src=img_rep)
+    h5=sub_t
+    p=description
+    button#red-b.text-center=enviar
+    ul.list-unstyled.text-center
+        li
+            a#color-red.text-center=more
 

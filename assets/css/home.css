@@ -31,6 +31,10 @@
   padding-right: 0px;
 }
 
+.pd-5 {
+  padding-bottom: 5%;
+}
+
 .info {
   position: absolute;
   bottom: 0px;

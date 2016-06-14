@@ -10,15 +10,19 @@ html(lang='es-PE')
     link(rel='stylesheet', type='text/css', href='../css/dist/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
     link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/jquery.bxslider.css')
     link(rel='stylesheet', type='text/css', href='../css/main.css')
+    link(rel='stylesheet', type='text/css', href='../css/blogs.css')
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
     script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
     script(type='text/javascript', src='../js/bootstrap.min.js')
-    script(type='text/javascript', src='../js/main.js')
-    script(type='text/javascript', src='../js/jquery.bxslider.min.js')
-  body.container(<div='')
-    include header.jade
+    script(type='text/javascript', src='../js/slick.min.js')
+    script(type='text/javascript', src='../js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='../js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='../js/respond.js')
+  body.container
+    .header
+      .container
+        include header.jade
     .row
       .col-md-2
         img(src="../image/img-club.png")
@@ -175,28 +179,28 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista1.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Tiro al blanco
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista2.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Humberto Campodónico
                       h5 Cristal de Mira
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista1.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista1.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
@@ -204,7 +208,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista2.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Delito de opinión
@@ -218,7 +222,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista4.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Mirada Externa
@@ -233,28 +237,28 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista5.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Tiro al blanco
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista6.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Humberto Campodónico
                       h5 Cristal de Mira
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista3.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista1.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
@@ -262,21 +266,21 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista2.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Delito de opinión
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/blog_avatar_01.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Humberto Campodónico
                       h5 Actualidad Económica - Oscar Dancourt
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista4.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Mirada Externa
@@ -291,28 +295,28 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista5.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Tiro al blanco
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista6.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Humberto Campodónico
                       h5 Cristal de Mira
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista3.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista1.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
@@ -320,7 +324,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista2.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Delito de opinión
@@ -334,7 +338,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista4.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Mirada Externa
@@ -349,28 +353,28 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista5.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Tiro al blanco
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista6.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Humberto Campodónico
                       h5 Cristal de Mira
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista3.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista1.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
@@ -378,7 +382,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista2.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Delito de opinión
@@ -392,9 +396,9 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista4.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
-                      p Javier Ágreda
+                      p Javier Ágredablog_avatar_03
                       h5 Mirada Externa
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
@@ -407,28 +411,28 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista5.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Tiro al blanco
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista6.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Humberto Campodónico
                       h5 Cristal de Mira
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista3.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista1.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
@@ -436,7 +440,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista2.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Delito de opinión
@@ -450,7 +454,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista4.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Mirada Externa
@@ -465,28 +469,28 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista5.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Tiro al blanco
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista6.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Humberto Campodónico
                       h5 Cristal de Mira
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista3.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista1.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
@@ -494,7 +498,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista2.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Delito de opinión
@@ -508,7 +512,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista4.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Mirada Externa
@@ -523,28 +527,28 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista5.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Tiro al blanco
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista6.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Humberto Campodónico
                       h5 Cristal de Mira
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista3.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista1.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Jaque Perpetuo
@@ -552,7 +556,7 @@ html(lang='es-PE')
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
                     .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista2.jpg')
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Francisco Durand
                       h5 Delito de opinión
@@ -565,8 +569,8 @@ html(lang='es-PE')
                       h5 Actualidad Económica - Oscar Dancourt
                 .col-md-3.text-center
                   .cuadrado-mix-columnista
-                    .imagen-mix-columnista.pull-left
-                      img(src='../image/columnista4.jpg')
+                    .imagen-mix-columnista.pull-blog_avatar_03left
+                      img(src='../image/blog_avatar_03.jpg')
                     .texto-mix-columnista
                       p Javier Ágreda
                       h5 Mirada Externa
